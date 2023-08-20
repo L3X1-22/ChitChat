@@ -1,11 +1,13 @@
 from io import open
 
 class bot():
-    response_bot = "hi"
-    input_user = str()
-    input_user_1 = input_user
-    first_bot = 0
-    sentence = "x"
+
+    def __init__(self):
+        self.response_bot = "hi, my name is ChitChat, and i can talk with you whenever you want!!"
+        self.input_user = str()
+        self.input_user_1 = self.input_user
+        self.first_bot = 0
+        self.sentence = "x"
 
     def response(self):
 
@@ -36,9 +38,9 @@ class bot():
                 self.sentence.close()
 
                 if self.input_user != "good bye" and self.input_user != "bye":
-                    print("\nhi\n")
+                    print("\nhi, my name is ChitChat, and i can talk with you whenever you want!!\n")
             except PermissionError:
-                print(f"\ni can't answer symbols, so i'm gonna reset:\n\nhi\n")
+                print(f"\ni can't answer symbols, so i'm gonna reset:\n\nhi, my name is ChitChat, and i can talk with you whenever you want!!\n")
 
 
 bot_1 = bot()
